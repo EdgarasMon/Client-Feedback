@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
-	background-color: #202142;
+	background-color: #251303;
 	color: #fff;
 	line-height: 1.6;
 }
@@ -23,13 +23,17 @@ ul {
 	padding: 0 20px;
 }
 
-header {
+.header {
 	height: 70px;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
+}
+
+.homeIcon {
+	font-size: 33px;
 }
 
 .card {
@@ -42,7 +46,7 @@ header {
 }
 
 .card.reverse {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: #ffd700;
 	color: #fff;
 }
 
@@ -59,8 +63,7 @@ header {
 	margin: 30px 0 40px;
 }
 
-.rating li,
-.num-display {
+.rating li {
 	position: relative;
 	background: #f4f4f4;
 	width: 50px;
@@ -82,13 +85,13 @@ header {
 	padding: 10px;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
+	font-weight: bold;
 	cursor: pointer;
 }
 
 .rating li:hover,
 .num-display {
-	background: #ff6a95;
-	color: #fff;
+	color: rgb(0, 0, 0);
 }
 
 [type='radio'] {
@@ -96,7 +99,7 @@ header {
 }
 
 [type='radio']:checked ~ label {
-	background: #ff6a95;
+	background: #ffd700;
 	color: #fff;
 }
 
@@ -126,16 +129,26 @@ input:focus {
 }
 
 .num-display {
+	font-size: 25px;
+	font-weight: bold;
 	position: absolute;
-	top: -10px;
-	left: -10px;
+	top: 10px;
+	left: 15px;
+}
+
+.star-display {
+	position: absolute;
+	color: rgba(250, 200, 0, 0.5);
+	top: -12px;
+	left: -15px;
+	font-size: 55px;
 }
 
 .close,
 .edit {
 	position: absolute;
 	top: 10px;
-	right: 20px;
+	right: 10px;
 	cursor: pointer;
 	background: none;
 	border: none;
@@ -146,29 +159,33 @@ input:focus {
 }
 
 .btn {
-	border: 0;
+	border: 1;
 	border-radius: 8px;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	width: 100px;
 	height: 40px;
 	cursor: pointer;
 }
 
 .btn-primary {
-	background-color: #202142;
+	background-color: #ffd700;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .btn-secondary {
-	background: #ff6a95;
+	background: #ffd700;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .btn:hover {
-	transform: scale(0.98);
+	transform: scale(1.1);
 	opacity: 0.9;
 }
 
 .btn:disabled {
-	background-color: #cccccc;
+	background-color: #fff;
 	color: #333;
 	cursor: auto;
 }
@@ -181,7 +198,7 @@ input:focus {
 .message {
 	padding-top: 10px;
 	text-align: center;
-	color: rebeccapurple;
+	color: rgb(130, 0, 0);
 }
 
 .about-link {
@@ -197,7 +214,7 @@ input:focus {
 }
 
 .about-link a:hover {
-	color: #ff6a95;
+	color: rgb(255, 240, 0);
 }
 
 .about h1 {
@@ -227,7 +244,7 @@ input:focus {
 }
 
 .about-link svg {
-	background: #6072ff;
+	background: #c4640f;
 	border-radius: 50%;
 	padding: 9px;
 	height: 43px;

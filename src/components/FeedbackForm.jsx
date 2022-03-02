@@ -47,7 +47,11 @@ function FeedbackForm({ handleAdd }) {
 						placeholder="write a review"
 						value={text}
 					></input>
-					<Button isDisabled={btnDisabled} type="submit">
+					<Button
+						isDisabled={btnDisabled}
+						version="secondary"
+						type="submit"
+					>
 						Send
 					</Button>
 				</div>

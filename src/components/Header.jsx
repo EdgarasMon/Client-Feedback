@@ -1,3 +1,6 @@
+import { FaHome } from 'react-icons/fa';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
 const Header = ({ text, bgColor, textColor }) => {
 	const headerStyles = {
 		background: bgColor,
@@ -6,16 +9,25 @@ const Header = ({ text, bgColor, textColor }) => {
 
 	return (
 		<header style={headerStyles}>
-			<div className="container"></div>
-			<h2>{text}</h2>
+			<div className="header">
+				<Link
+					to="/"
+					style={{ textDecoration: 'none', color: 'inherit' }}
+				>
+					<h2>
+						<FaHome className="homeIcon" />
+						{text}
+					</h2>
+				</Link>
+			</div>
 		</header>
 	);
 };
 
 Header.defaultProps = {
 	text: 'Client Feedback',
-	bgColor: 'rgba(0, 0, 0, 0.4)',
-	textColor: '#ff6a95',
+	bgColor: '#0f0701',
+	textColor: '#FFD700 ',
 };
 
 export default Header;
