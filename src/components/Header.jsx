@@ -11,7 +11,7 @@ const Header = ({ text, bgColor, textColor }) => {
 		<header style={headerStyles}>
 			<div className="header">
 				<Link
-					to="/"
+					to="/Client-Feedback"
 					style={{ textDecoration: 'none', color: 'inherit' }}
 				>
 					<h2>

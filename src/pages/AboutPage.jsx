@@ -13,7 +13,7 @@ function AboutPage() {
 				<p>Version: 1.0.0</p>
 
 				<p>
-					<Link to="/">Back to Home</Link>
+					<Link to="/Client-Feedback">Back to Home</Link>
 				</p>
 			</div>
 		</Card>
