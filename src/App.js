@@ -17,7 +17,7 @@ const App = () => {
 					<Routes>
 						<Route
 							exact
-							path="/"
+							path="/Client-Feedback"
 							element={
 								<>
 									<FeedbackForm />
